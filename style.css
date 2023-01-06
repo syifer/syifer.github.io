@@ -22,7 +22,7 @@ body{
   background:
     url(map.jpg)
     0/auto 100%;
-  animation: spin 6s linear infinite;
+  animation: spin 4s linear infinite;
 }
 
 @keyframes spin{

@@ -1,24 +1,43 @@
     <html lang="en">
-        <head>
+        <header>
             <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device.width, initial.scale=1.0">
-            <title>Syifer</title>
-            <link rel="stylesheet" href="style.css" />
-        </head>
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                    <meta name="viewport" content="width=device.width, initial.scale=1.0">
+                        <title>Syifer</title>
+                        <link rel="stylesheet" href="style.css" />
+                        <div class="header-banner">
+                            <div class="earth" style="--d:300px"></div>
+                        </div>
+                        <div class="clear"></div>
+                        <nav>
+                            <div class="site-title">Finland</div>
+                            <ul>
+                                <li><a href="/archive">Archive</a></li>
+                                <li><a href="/events">Events</a></li>
+                                <li><a href="/contact">Contact</a></li>
+                                <ul>
+                        </nav>
+        </header>
         <body>
-            <nav>
-                <ul>
-                  <li><a href="#first">Syifer</a></li>
-                  <li><a href="#second">Services</a></li>
-                  <li><a href="#third">Projects</a></li>
-                </ul>
-              </nav>
+           
             <section id="first">
-                <div class="earth" style="--d:300px"></div>
                 Syifer
             </section>
             <section id="second">Services</section>
             <section id="third">Projects</section>
+            
+    <script>
+        $(window).scroll(function(){
+        if ($(window).scrollTop() >= 300) {
+            $('nav').addClass('fixed-header');
+            $('nav div').addClass('visible-title');
+        }
+        else {
+            $('nav').removeClass('fixed-header');
+            $('nav div').removeClass('visible-title');
+        }
+    });
+
+    </script>
         </body>
 </html>
